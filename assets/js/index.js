@@ -46,7 +46,7 @@ function getUserInfo() {
         // console.log(111);
         //1用户名(昵称优先  没有昵称用username)
         var name = user.nickname || user.username
-        $('#welcome').html("欢迎&nbsp;&nbsp;" + name)
+        $('.welcome').html("欢迎&nbsp;&nbsp;" + name)
         //2用户头像
         //判断 如果有头像  就显示头像 把头像的属性改成user.user_pic  文字头像隐藏   否则相反
         if (user.user_pic !== null) {
